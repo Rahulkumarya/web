@@ -1,0 +1,38 @@
+
+<%- include("partials/header"); -%>
+ 
+
+      
+
+      <div class="box">
+        <form action="/compose"method="post">
+            <h1>Compose</h1>
+            <br>
+            
+            <div class="compose-inputBox">
+               
+                <span>Title</span><br>
+                <input type="text" required="required"name="postTitle"><br>
+            <span>Content</span><br>
+            <textarea class="text-area" name="postBody" rows="5" cols="92"></textarea>
+                
+            </div>
+            <button class="btn btn-primary" type="submit" name="button">Publish</button>
+        </form>
+    </div>
+
+
+    
+  
+
+
+
+<%- include("partials/footer"); -%>
+
+
+
+
+
+
+
+

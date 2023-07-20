@@ -1,0 +1,32 @@
+
+<%- include("partials/header"); -%>
+<div class="post-bar">
+    <h1 style="text-align: center;color: beige;">Blogs</h1>
+    
+    <p> <%= startingContent %> </p>
+
+    <%  resultitem.forEach(function(result){ %>
+        <div class="blogpage">
+        <h1 style="color: beige;"><%=result.title%></h1>
+      <p class="blog-post"style="color:beige;">
+        
+        <%=result.content.substring(0,50)+"....."%>
+        <a  class="nhet"href="/result/<%=result.title%>">Read More</a>
+      </p>
+    
+         
+       
+       
+         
+
+    
+    
+      <% }) %>
+
+
+    </div>
+   
+</div>
+
+
+<!-- <%- include("partials/footer"); -%> -->
